@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails du Produit - ImportHub</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo">Import<span>Hub</span></a>
+        <nav>
+          <a href="index.html">← Retour au catalogue</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="product-detail-container">
+        <!-- Fiche Produit Informations -->
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800"
+            alt="Écouteurs"
+            style="
+              width: 100%;
+              border-radius: 12px;
+              margin-bottom: 1rem;
+              box-shadow: var(--shadow);
+            "
+          />
+          <span class="origin-tag"
+            >📍 Provenance : Shenzhen, Chine (Usine Partenaire Certifiée)</span
+          >
+          <h1
+            style="color: var(--primary); margin: 0.5rem 0; font-size: 1.8rem"
+          >
+            Écouteurs Sans Fil Pro ANC
+          </h1>
+          <div
+            style="
+              font-size: 1.8rem;
+              font-weight: 800;
+              color: var(--accent);
+              margin-bottom: 1rem;
+            "
+          >
+            18 500 FCFA
+          </div>
+          <p
+            style="color: var(--text-muted); font-size: 1rem; line-height: 1.7"
+          >
+            Écouteurs intra-auriculaires haut de gamme dotés de la technologie
+            de réduction active du bruit (ANC). Offrent une autonomie de 24h
+            avec le boîtier de charge rapide USB-C et une connexion Bluetooth
+            5.3 ultra-stable. Conçus pour un confort d'écoute optimal.
+          </p>
+        </div>
+
+        <!-- Formulaire de Commande -->
+        <div
+          style="
+            background: var(--bg-main);
+            padding: 2rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border-color);
+          "
+        >
+          <h2 style="margin-bottom: 1.2rem; color: var(--primary)">
+            Passer votre Commande
+          </h2>
+          <form
+            onsubmit="
+              alert(
+                'Votre commande a bien été enregistrée ! Nous vous contactons par WhatsApp.',
+              );
+              return false;
+            "
+          >
+            <div class="form-group">
+              <label>Nom & Prénoms</label>
+              <input type="text" required placeholder="Votre nom complet" />
+            </div>
+            <div class="form-group">
+              <label>Téléphone (WhatsApp)</label>
+              <input
+                type="tel"
+                required
+                placeholder="Ex: +225 07 00 00 00 00"
+              />
+            </div>
+            <div class="form-group">
+              <label>Ville & Quartier de livraison</label>
+              <input
+                type="text"
+                required
+                placeholder="Ex: Yamoussoukro, Quartier Commerce"
+              />
+            </div>
+            <div class="form-group">
+              <label>Quantité</label>
+              <input type="number" value="1" min="1" required />
+            </div>
+            <button type="submit" class="btn-submit">
+              Valider la commande
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
